@@ -1,0 +1,19 @@
+﻿<Window x:Class="_3333.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3333"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Slider Minimum="8" Maximum="30" x:Name="SliderFontSize" Height="NaN" Margin="42,131,519,99" Width="NaN"></Slider>
+        <TextBlock x:Name="Message" FontSize="{Binding ElementName=SliderFontSize, Path=Value}" Height="NaN" Margin="64,88,544,230" Width="NaN">
+ Пример WPF-приложения для демонстрации привязки данных
+        </TextBlock>
+        <Slider Minimum="8" Maximum="30" x:Name="SliderFontSize2" Height="NaN" Margin="410,131,53,99" Width="NaN"></Slider>
+        <TextBlock x:Name="Message1" FontSize="{Binding ElementName=SliderFontSize2, Path=Value}" Height="NaN" Margin="413,88,195,230" Width="NaN">
+ Пример WPF-приложения для демонстрации привязки данных2
+        </TextBlock>
+    </Grid>
+</Window>
